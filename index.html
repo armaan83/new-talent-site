@@ -1,90 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Talent Bridge | Global Hiring & Lead Generation</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- NAVBAR -->
+
 <header class="navbar">
-  <div class="logo">Talent<span>Bridge</span></div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="service.html">Services</a>
-    <a href="ecommerce.html">eCommerce</a>
-    <a href="contact.html" class="cta">Contact</a>
-  </nav>
+<div class="logo">TalentBridge</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="solutions.html">Solutions</a>
+<a href="contact.html" class="btn">Contact</a>
+</nav>
 </header>
 
-<!-- HERO SECTION -->
+
 <section class="hero">
-  <h1>Connecting Global Talent with World-Class Companies</h1>
-  <p>
-    14+ years helping multinational organizations hire professionals
-    and generate qualified business leads.
-  </p>
-
-  <a href="contact.html" class="btn-primary">
-    Request Qualified Leads
-  </a>
+<div class="hero-content">
+<h1>Building Global Teams.<br><span>Driving Business Growth.</span></h1>
+<p>Helping multinational companies hire, scale, and generate qualified leads for over 14+ years.</p>
+<div class="hero-actions">
+<a href="services.html" class="btn-primary">Explore Services</a>
+<a href="contact.html" class="btn-outline">Talk to Us</a>
+</div>
+</div>
 </section>
 
-<!-- TRUST STATS -->
-<section class="stats">
-  <div>
-    <h2>14+</h2>
-    <p>Years Experience</p>
-  </div>
-  <div>
-    <h2>500+</h2>
-    <p>Enterprise Clients</p>
-  </div>
-  <div>
-    <h2>30+</h2>
-    <p>Countries Served</p>
-  </div>
+
+<section class="stats reveal">
+<div><h2>14+</h2><p>Years Experience</p></div>
+<div><h2>120+</h2><p>Enterprise Clients</p></div>
+<div><h2>30+</h2><p>Countries Served</p></div>
 </section>
 
-<!-- FEATURES -->
-<section class="features">
-  <h2>Why Talent Bridge</h2>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Global Talent Sourcing</h3>
-      <p>Access top-tier professionals across global markets.</p>
-    </div>
-
-    <div class="card">
-      <h3>Qualified Lead Generation</h3>
-      <p>Data-driven B2B leads designed to convert.</p>
-    </div>
-
-    <div class="card">
-      <h3>End-to-End Hiring</h3>
-      <p>From sourcing to onboarding — fully managed.</p>
-    </div>
-
-    <div class="card">
-      <h3>eCommerce & Growth</h3>
-      <p>Build and scale profitable online businesses.</p>
-    </div>
-  </div>
+<section class="cards">
+<div class="card reveal">
+<h3>Global Talent Sourcing</h3>
+<p>Access pre-vetted professionals across technology, operations, and leadership roles.</p>
+</div>
+<div class="card reveal">
+<h3>Lead Generation</h3>
+<p>High-intent qualified leads powered by data-driven outreach and targeting.</p>
+</div>
+<div class="card reveal">
+<h3>Ecommerce Enablement</h3>
+<p>From platform development to performance marketing and scaling.</p>
+</div>
 </section>
+
 
 <footer>
-  © 2025 Talent Bridge. All rights reserved.
+<p>© 2026 Talent Bridge. All rights reserved.</p>
 </footer>
+
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', () => {
+reveals.forEach(el => {
+const top = el.getBoundingClientRect().top;
+if (top < window.innerHeight - 100) el.classList.add('active');
+});
+});
+</script>
+
 
 </body>
 </html>
